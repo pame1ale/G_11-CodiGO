@@ -25,7 +25,6 @@ header nav ul {
 
 header nav ul li{
 	padding-right: 10px;
-	font-family: Arial;
 	font-size: 18px;
 	font-style: normal;
 	font-weight: 700;
@@ -52,7 +51,6 @@ main section ul li {
 /* h2 */
 
 header nav h2{
-	font-family: Arial;
 	font-size: 32px;
 	font-style: normal;
 	font-weight: 700;
@@ -65,7 +63,6 @@ header nav h2{
 .briefcase h2 ,
 .contact h2 ,
 footer {
-	font-family: Arial;
 	font-size: 24px;
 	font-style: normal;
 	font-weight: 700;
