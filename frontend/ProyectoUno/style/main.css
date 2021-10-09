@@ -2,18 +2,7 @@
 *{
 	padding: 0;
 	margin:0;
-}
-
-main section {
-	margin: 66px 40px;
-
-}
-main section ul{
-	padding-top: 50px;
-}
-main section ul li {
-	padding: 5px;
-	margin-left: 49px;
+	font-family: Arial;
 }
 
 /*nav*/
@@ -39,12 +28,26 @@ header nav ul li{
 	font-family: Arial;
 	font-size: 18px;
 	font-style: normal;
-	font-weight: 400;
-	line-height: 21px;
-
+	font-weight: 700;
+	line-height: 44px;
+	letter-spacing: 0em;
+	text-align: left;
 }
-
-
+/* section */
+main section {
+	margin: 66px 40px;
+}
+main section ul{
+	margin-top: 50px;
+}
+main section ul li {
+	padding: 5px;
+	margin-left: 49px;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 44px;
+}
 
 /* h2 */
 
@@ -72,7 +75,7 @@ footer {
 /* img */
 
 img{
-	margin: 33px  15px 0;
+	margin: 33px  13px 0;
 }
 
 /* HOME*/
@@ -132,4 +135,6 @@ footer{
 	justify-content: space-between;
 	padding: 35px;
 	padding-bottom: 19px;
+
+
 }
