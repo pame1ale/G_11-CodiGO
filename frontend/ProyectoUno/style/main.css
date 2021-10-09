@@ -15,16 +15,16 @@ header nav  {
 	display: flex;
 	justify-content: space-between;
 }
-header nav  ul {
+header   ul {
 	 display: flex;
 }
 
-header nav ul {
+header  ul {
 	list-style:none;
 }
-
-header nav ul li{
+header   li{
 	padding-right: 10px;
+	font-family: Arial;
 	font-size: 18px;
 	font-style: normal;
 	font-weight: 700;
@@ -32,15 +32,19 @@ header nav ul li{
 	letter-spacing: 0em;
 	text-align: left;
 }
-/* section */
-main section {
-	margin: 66px 40px;
+header  li a{
+	color: #ffffff;
+	text-decoration: none;
 }
-main section ul{
+/* section */
+ section {
+	margin: 50px 40px;
+}
+ section ul{
 	margin-top: 50px;
 }
-main section ul li {
-	padding: 5px;
+ section li {
+	/*padding: 2.5px*/
 	margin-left: 49px;
 	font-size: 18px;
 	font-style: normal;
@@ -49,8 +53,8 @@ main section ul li {
 }
 
 /* h2 */
-
 header nav h2{
+	font-family: Arial;
 	font-size: 32px;
 	font-style: normal;
 	font-weight: 700;
@@ -63,32 +67,30 @@ header nav h2{
 .briefcase h2 ,
 .contact h2 ,
 footer {
+	font-family: Arial;
 	font-size: 24px;
 	font-style: normal;
 	font-weight: 700;
 	line-height: 28px;
 	padding-bottom: 16px;
  }
-/* img */
 
+/* img */
 img{
 	margin: 33px  13px 0;
 }
 
 /* HOME*/
-
 .home h2{
 	color:#3B06D2;
 }
 
 /* SERVICIO */
-
 .service h2{
 	color: #D206B2;
 }
 
 /* PORTAFOLIO */
-
 .briefcase h2{
 	color: #AAD206;
 	
@@ -100,19 +102,19 @@ img{
 }
 .contact input{
 	display:block;
-	box-sizing: border-box;
 }
 
 .contact input[type="text"]{
+	box-sizing: border-box;
 	margin-top: 13px;
+	margin-right: 62px;
 	width: 100%;
 	padding: 34px  0 28px 26px;
-	padding-right: 
-	margin-left:38px;
-	margin-right: 62px;
 }
 .contact textarea {
+	box-sizing: border-box;
 	margin-top: 40px;
+	margin-right: 62px;
 	width: 100%;
 	padding: 20px 0 169px 25px;
 }
@@ -120,7 +122,9 @@ img{
 	margin-top: 37px;
 	color: #22A900;
 	padding: 24px 66px;
-
+	background: #ffffff;
+	border: 1px solid #22A900;
+	box-sizing: border-box;
 }
 
 /*footer*/
@@ -132,6 +136,4 @@ footer{
 	justify-content: space-between;
 	padding: 35px;
 	padding-bottom: 19px;
-
-
 }
