@@ -16,12 +16,11 @@ header nav  {
 	justify-content: space-between;
 }
 header   ul {
-	 display: flex;
+	display: flex;
+    align-items: flex-start;
+   
 }
 
-header  ul {
-	list-style:none;
-}
 header   li{
 	padding-right: 10px;
 	font-family: Arial;
@@ -50,11 +49,11 @@ header  li a{
 	font-style: normal;
 	font-weight: 700;
 	line-height: 44px;
+	list-style: disc;
 }
 
 /* h2 */
 header nav h2{
-	font-family: Arial;
 	font-size: 32px;
 	font-style: normal;
 	font-weight: 700;
