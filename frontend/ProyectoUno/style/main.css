@@ -7,16 +7,26 @@
 header{
 	background: #00AF1C;
 	color:#ffffff;
-	margin: 0;
+	display: flex;
+	justify-content: space-between;
 }
 header nav  {
 	display: flex;
 	justify-content: space-between;
 }
-header   ul {
-	display: flex;
+header .nav-logo{
+	font-size: 32px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 37px;
+	padding: 20px 0 32px 20px;	
+    margin: 0px;
 }
-
+header ul {
+	display: flex;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
 header   li{
 	padding-right: 10px;
 	font-family: Arial;
@@ -49,14 +59,6 @@ header  li a{
 }
 
 /* h2 */
-header nav h2{
-	font-size: 32px;
-	font-style: normal;
-	font-weight: 700;
-	line-height: 37px;
-	padding: 30px 0 32px 32px;
-}
-
 .home h2 ,
 .service h2,
 .briefcase h2 ,
