@@ -16,9 +16,7 @@ header nav  {
 	justify-content: space-between;
 }
 header   ul {
-	display: flex;
-    align-items: flex-start;
-   
+	display: flex;   
 }
 
 header   li{
