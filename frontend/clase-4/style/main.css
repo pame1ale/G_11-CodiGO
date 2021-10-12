@@ -1,0 +1,154 @@
+/* Variables Globales */
+body{
+	display: flex;
+	justify-content: center;
+	background: #FFE7E7;
+}
+main{
+	width: 600px;
+	background: #ffffff;
+	margin: 15px 0;
+	border-radius: 10px;
+}
+input{
+	margin-top: 16px;
+	padding: 13px;
+	background: #FFFFFF;
+	border: 1px solid #000000;
+	box-sizing: border-box;
+	border-radius: 4px;
+}
+input[value]{
+	font-style: normal;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 16px;
+	letter-spacing: 0.125px;
+}
+p{
+	/*font-family: Noto Sans;*/
+	font-size: 19px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 24px;
+	letter-spacing: 0em;
+}
+h1{
+	margin-top: 36px;
+}
+footer{
+	margin-top: 50px;
+	text-align: center;
+	font-size: 13px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 19px;
+}
+a{
+	color: black;
+	font-size: 17px;
+}
+a:hover{
+	color: #335555;
+}
+
+/* General */
+.container_2 h2, 
+.container_3 h2, 
+.container_4 h2{
+	font-family: Noto Sans;
+	font-size: 27px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 34px;
+	text-align: left;
+}
+
+.container_2 img, 
+.container_3 img, 
+.container_4 img{
+	height: 260px;
+	width: 260px;
+	border-radius: 8px;
+}
+.container_2 p, 
+.container_3 p, 
+.container_4 p{
+	margin-top: 8px;
+}
+
+.container_2 , 
+.container_3 , 
+.container_4 {
+	display: flex;
+}
+
+.div{
+	margin-top: 56px;
+	margin-bottom: 40px ;
+	margin-left: 30px;
+}
+
+/* Contenedor 1 */
+.container_1 {
+	text-align: center;
+}
+.container_1 h2 , h1{
+/*font-family: Noto Sans;*/
+	font-size: 36px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 49px;
+	text-align: center;
+}
+.container_1 h2{
+	margin-top: 55px;
+}
+.container_1 img{
+	margin-top: 24px;
+	height: 360px;
+	width: 504px;
+	border-radius: 8px;
+	background: #fff0f0;
+	text-align: center;
+
+}
+.container_1 p{
+	margin-top: 25px;
+}
+.container_1 input{
+	margin-top: 24px ;
+}
+
+/* Contenedor 2 */
+.container_2 img{
+	margin: 89px 24px 0 28px;
+}
+.container_2 div{
+	margin: 103px 28px 0 0;
+}
+
+/* Contenedor 3 */
+.container_3 img {
+	margin: 72px 28px 0 24px;
+}
+.container_3 div{
+	margin: 99px 0 0 28px;
+}
+
+/* Contenedor 4 */
+.container_4 img{
+	margin: 72px 24px 0 28px;
+}
+.container_4 div{
+	margin: 99px 28px 0 0;
+}
+
+/* Footer */
+.container_icons{
+	margin-top: 20px;
+	margin-bottom: 29px;
+}
+.container_icons img{
+	margin-right: 30px;
+}
