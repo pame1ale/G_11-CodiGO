@@ -1,0 +1,157 @@
+*{
+	box-sizing: border-box;
+}
+body{
+	font-family: 'Roboto', sans-serif;
+	font-size: 24px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 28px;
+	letter-spacing: 0em;
+}
+header{
+	position: fixed;
+	background: #9017EF;
+	height: 121px;
+	width: 436px;
+	left: 20px;
+	top: 25px;
+	border-radius: 0px;
+	color: #ffffff;
+	z-index: 2;
+}
+header h1{
+	display: inline-block;
+	margin: 47px 33px;
+}
+main .container{
+	position: relative;
+	left: 536px;
+	width:600px;
+	z-index: 1;
+	padding: 15px;
+}
+footer{
+	background: #9017EF;
+	position: fixed;
+	width: 221px;
+	height: 121px;
+	left: 20px;
+	top: 525px;
+	color: #ffffff;
+}
+footer p{
+	padding: 13px 0 0 13px;
+}
+
+/* CUERPO */
+.body{
+	position: relative;
+	width: 400px;
+	height: 374px;
+	left: 100px;
+	top: 220px;
+	background: #AD1010;
+}
+
+/* CARA */
+.face {
+	background: #C4C4C4;
+	position:absolute;
+	width: 288px;
+	height: 253px;
+	left: 170px;
+	z-index: 3;
+}
+.left_eye ,
+.right_eye{
+	background: #FB1D1D;
+	position: absolute;
+	height: 73px;
+	width: 68px;
+	top: 15px
+}
+.left_eye{
+	left: 35px;
+}
+.right_eye{
+	right: 35px;
+}
+.mouth{
+	background: #B61414;
+	position: absolute;
+	width: 149px;
+	height: 61px;
+	left: 75px;
+	top: 120px;
+}
+
+/* MANOS   */
+.letf_hand,
+.right_hand{
+	display: inline-block;
+	background: #C4C4C4;
+	position: absolute;
+	width: 231px;
+	height: 79px;
+	top : 110px;
+}
+.letf_hand{
+	left: -55px;
+}
+.right_hand{
+	right:-55px;
+}
+
+/* PIERNAS */
+.left_leg,
+.right_leg{
+	background: #C4C4C4;
+	position: absolute;
+	width: 98px;
+	height: 222px;
+	bottom: -160px;
+}
+.left_leg{
+	left: 52px;
+}
+.right_leg{
+	right: 52px;
+}
+/* PIES */
+.left_foot,
+.right_foot{
+	background: #CF9729;
+	position: absolute;
+	width: 132px;
+	height: 53px;
+	bottom: 0;
+}
+.left_foot{
+	left: -15px;
+}
+.right_foot{
+	right: -15px;
+}
+/* ICONS */
+.fab{
+	color: #ffffff;
+	width: 45px;
+}
+.icons{
+	margin-top: 15px;
+	margin-left: 35px;
+}
+/*MOVIMIENTO*/
+.right_hand:hover{
+	background: #222255;
+	top: 90px;
+	right: -100px;
+	transition: all 0.8 edge;
+}
+.letf_hand:hover{
+	background: #222255;
+	top: 90px;
+	left: -100px;
+	transition: all 0.8 ease-out;
+}
