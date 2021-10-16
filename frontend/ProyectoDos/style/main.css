@@ -1,0 +1,111 @@
+body{
+	font-family: 'Roboto', sans-serif;
+	color: #ffffff;
+}
+header{
+	background: #00AAB5;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+nav{
+	margin-right: 38px;
+}
+h2{
+	width: 100%;
+	text-align: center;
+	font-size: 36px;
+	font-style: normal; /**/
+	font-weight: 700;   /**/
+	line-height: 42px;
+}
+/* header  */
+.nav-logo p{
+	font-size: 21px;
+	font-style: normal; /**/
+	font-weight: 700;   /**/
+	line-height: 25px;
+}
+.nav-logo h1 , .nav-logo p{
+	display: inline-block;
+}
+.nav-logo h1{
+	font-size: 64px;
+	font-style: normal; /**/
+	font-weight: 700;   /***/
+	line-height: 75px;
+}
+.nav-ul{
+	display: flex;
+	justify-content: space-between;
+}
+.nav-ul li{
+	list-style: none;
+	padding-right: 4px;
+}
+.nav-ul li:last-child{
+	padding-right: 0;
+}
+.nav-ul a{
+	text-decoration: none;
+	color: #ffffff;
+}
+.nav-ul a:hover{
+	color: #123455;
+}
+
+/*Portada*/
+.container-coverPage{
+	position: relative;
+
+}
+.container-coverPage  img{
+	width: 100%;
+}
+.container-coverPage p{
+	position: absolute;
+	top: 0;
+	background: rgba(114, 153, 254, 0.5);
+}
+
+/* My Skills */
+.container-mySkills{
+	background: #7299FE;
+}
+.container-mySkills h2{
+	 color: #B508A3;
+	 margin: 0 auto;
+}
+
+/*Servicios*/
+.container-service {
+	background: #FB7171;;
+}
+.container-service h2{
+	color: #00CC9B;
+}
+
+/*Portafolio*/
+.container-briefcase {
+	background: #FFD233;
+}
+.container-briefcase h2{
+	color: #8402A5;
+}
+
+/*Clientes*/
+.container-customers {
+	background: #3F4E62;
+}
+.container-customers h2{
+	color: #FF00C7;
+}
+
+
+/**/
+.container-contacts {
+	background: #16A085;
+}
+.container-contacts h2{
+	color: #CEE000;
+}
