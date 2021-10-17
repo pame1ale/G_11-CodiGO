@@ -321,7 +321,7 @@ footer{
 	}
 	.container-coverPage div > p{
 		font-size: 1.5em;
-		line-height: 35px;
+		line-height: 30px;
 	}
 	.container-mySkills > div{
 		grid-template-columns: repeat(1, 1fr);
@@ -343,6 +343,19 @@ footer{
 	}
 	.container-customers img {
 		margin-top: 2px;
+	}
+}
+
+@media (max-width: 420px) {
+	.nav-ul {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+    
+	}
+	footer{
+		display: block;
+		text-align: center;
+	  line-height: 22px;
 	}
 }
 
