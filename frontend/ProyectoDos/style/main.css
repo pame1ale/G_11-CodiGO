@@ -52,7 +52,7 @@ footer{
 	line-height: 25px;
 }
 .nav-logo h1{
-	margin-left: 0.34em;
+
 }
 .nav-logo p{
 	margin-left: 0.15em;
@@ -350,7 +350,7 @@ footer{
 	.nav-ul {
 		display: grid;
 		grid-template-columns: repeat(3, 1fr);
-    
+    justify-items: center;
 	}
 	footer{
 		display: block;
