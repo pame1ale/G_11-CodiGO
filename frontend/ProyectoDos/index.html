@@ -18,56 +18,93 @@
 	</div>
 	<nav>
 			<ul class="nav-ul">
-				<li ><a href="#"> Quien soy</a></li>
-				<li ><a href="#"> Mis Skills</a></li>
-				<li ><a href="#"> Servicios</a></li>
-				<li ><a href="#"> Portafolio</a></li>
-				<li ><a href="#"> Clientes</a></li>
-				<li ><a href="#"> Contactos</a></li>
+				<li ><a href="#CoverPage"> Quien soy</a></li>
+				<li ><a href="#MySkills"> Mis Skills</a></li>
+				<li ><a href="#Service"> Servicios</a></li>
+				<li ><a href="#Briefcase"> Portafolio</a></li>
+				<li ><a href="#Customers"> Clientes</a></li>
+				<li ><a href="#Contacts"> Contacto</a></li>
 			</div>
 	</nav>
 </header>
 
 <main>
-	<section class="container-coverPage">
+	<section id="CoverPage" class="container-coverPage">
 			<img src="./images/images.png">
-			<p>Hola, mi nombre es Alejandra Pamela</p>
+			<p class="codigo">CodiGO</p>
+			<div>
+				<p>Hola, mi nombre es Alejandra Pamela</p>
+			</div>
 	</section>
 
-	<section class="container-mySkills">
+	<section id="MySkills"  class="container-mySkills">
 		<h2> My Skills</h2>
-	
-	</section>	
-
-	<section class="container-service">
-		<h2> Servicios</h2>
 		<div>
 			<div>
-				<img src="./images/vector.png">
-				<p>Diseño web</p>
+				<p>Html</p>
+				<input type="range" min="5" max="10" step="0.01">
 			</div>
 			<div>
-				<img src="./images/vector.png">
-				<p>Desarrollo web</p>
-			</div>
-				<img src="./images/vector.png">
-				<p>Desarrollo Mobile</p>
-			</div>
+				<p>Css</p>
+				<input type="range" min="5" max="10" step="0.01">
+			</div>	
 			<div>
-				<img src="./images/vector.png">
-				<p>Diseño UI</p>
+				<p>Angular</p>
+				<input type="range" min="5" max="10" step="0.01">
 			</div>
-			<div>
-				<img src="./images/vector.png">
-				<p>Diseño UX</p>
+				<div>
+				<p>Figma</p>
+				<input type="range" min="5" max="10" step="0.01">
 			</div>
-			<div>
-				<img src="./images/vector.png">
-				<p>Metologias Agiles</p>
+				<div>
+				<p>Javascript</p>
+				<input type="range" min="5" max="10" step="0.01">
+			</div>
+				<div>
+				<p>React</p>
+				<input type="range" min="5" max="10" step="0.01">
+			</div>
+				<div>
+				<p>Python</p>
+				<input type="range" min="5" max="10" step="0.01">
+			</div>
+				<div>
+				<p>Node.js</p>
+				<input type="range" min="5" max="10" step="0.01">
 			</div>
 		</div>
+	</section>	
+
+	<section id="Service" class="container-service">
+		<h2> Servicios</h2>
+		<div class="box-service">
+				<div>
+					<img src="./images/vector.png">
+					<p>Diseño web</p>
+				</div>
+				<div>
+					<img src="./images/vector.png">
+					<p>Desarrollo web</p>
+				</div>
+			  <div>
+					<img src="./images/vector.png">
+					<p>Desarrollo Mobile</p>
+				</div>
+				<div>
+					<img src="./images/vector.png">
+					<p>Diseño UI</p>
+				</div>
+				<div>
+					<img src="./images/vector.png">
+					<p>Diseño UX</p>
+				</div>
+				<div>
+					<img src="./images/vector.png">
+					<p>Metologias Agiles</p>
+				</div>
+		</div>
 	</section>
-	<section class="container-briefcase">
+	<section id="Briefcase" class="container-briefcase">
 		<h2> Portafolio</h2>
 		<div>
 			<a href="#"><img src="./images/image-7.png"></a>
@@ -80,7 +117,7 @@
 			<a href="#"><img src="./images/image.png"></a>
 		</div>
 	</section>
-	<section class="container-customers">
+	<section id="Customers" class="container-customers">
 		<h2> Clientes</h2>
 		<div>
 			<img src="./images/image-9.png">
@@ -89,23 +126,29 @@
 			<img src="./images/image-8.png">
 		</div>
 	</section>
-	<section class="container-contacts">
+	<section id="Contacts" class="container-contacts">
 		<h2> Contacto</h2>
 			<form method="GET">
-				<input id="nombre"   type="text" name="nombre"   placeholder="Nombre"   required >
-				<input id="apellido" type="text" name="apellido" placeholder="Apellido" required >
-				<input id="email"    type="email" name="email"   placeholder="Email"    required >
-				<input id="telefono" type="text" name="telefono" placeholder="Telefono" required  pattern=[0-9]{9}>
+				<div>
+					<input id="nombre"   type="text" name="nombre"   placeholder="Nombre"   required >
+					<input id="apellido" type="text" name="apellido" placeholder="Apellido" required >
+					<input id="email"    type="email" name="email"   placeholder="Email"    required >
+					<input id="telefono" type="text" name="telefono" placeholder="Telefono" required  pattern=[0-9]{9}>
+			  </div>
 				<textarea id="mensaje" placeholder="Descripción" ></textarea>
-				<input type="submit" name="boton" value="Enviar">
+				<div>
+					<input type="submit" name="boton" value="Enviar">
+				</div>
 			</form>
 </main>
 
 <footer>
-	<p>Todos los derechos reservados |2021 </p>
+	<p>Todos los derechos reservados | 2021 </p>
 	<p>Creado por Alejandra Pamela</p>
-
 </footer>
 
 </body>
 </html>
+<style type="text/css">
+	
+</style>
