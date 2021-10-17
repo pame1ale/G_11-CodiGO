@@ -8,7 +8,7 @@
 body{
 	font-family: 'Roboto', sans-serif;
 	color: #ffffff;
-	max-width: 957px;
+	max-width: 960px;
 	margin: auto;
 	font-size: 21px;
 	font-style: normal;
@@ -66,6 +66,10 @@ footer{
 	display: flex;
 	justify-content: space-between;
 }
+.nav-ul-responsive{
+	display: none;
+}
+.nav-ul-responsive li,
 .nav-ul li{
 	flex-direction: row;
 	font-size: 0.8em;
@@ -76,6 +80,7 @@ footer{
 .nav-ul li:last-child{
 	padding-right: 0;
 }
+.nav-ul-responsive a,
 .nav-ul a{
 	text-decoration: none;
 	color: #ffffff;
@@ -90,11 +95,15 @@ footer{
 }
 /*Portada*/
 .container-coverPage{
+	background: #000;
 	position: relative;
 	max-width: 100%;
+	max-height: 525px;
+	overflow: hidden;
+	text-align: right;
 }
 .container-coverPage .codigo{
-	color: #000;
+	color: #fff;
 	position: absolute;
 	display: flex;
 	justify-content: center;
@@ -107,14 +116,16 @@ footer{
 	right: 0;
 }
 .container-coverPage div{
+	display: flex;
 	text-align: center;
 	background: rgba(114, 153, 254, 0.5);
 	height: 5.5em;
 	width: 17.38em;
 	border-radius: 2px;
 	position: absolute;
-	left:2.38em;
-	bottom: 6.14em;
+	justify-content: center;
+	top: 40%;
+	left: 5%;
 }
 .container-coverPage div > p{
 	font-size: 1.7em;
@@ -124,7 +135,7 @@ footer{
 	padding: 0.4em;
 }
 .container-coverPage img{
-	width: 100%;
+	max-width: 100%;
 }
 
 /* My Skills */
@@ -180,6 +191,7 @@ footer{
 	text-align: center;
 }
 .container-briefcase div{
+	width: 100%;
 	padding: 0 4em 3em 4em;
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
@@ -187,6 +199,12 @@ footer{
 }
 .container-briefcase h2{
 	color: #8402A5;
+}
+.container-briefcase img{
+	width: 142px;
+	height: 92px;
+	max-width: 90%;
+	border-radius: 4px;
 }
 .container-briefcase img:hover {
 	opacity: 0.7;
@@ -207,9 +225,9 @@ footer{
 .container-customers img{
 	height: 69px;
 	width: 178px;
+	max-width: 100%;
 	opacity: 0.79;
 	border-radius: 5px;
-
 }
 
 /**/
@@ -227,17 +245,18 @@ footer{
 .container-contacts input[type="email"]{
 	width: 45%;
 	padding: 1.5em ;
+	border:  1px solid #ACA1A1;
 	border-radius: 10px;
 	margin: 0.4em;
 }
 .container-contacts textarea{
 	width: 90%;
 	padding: 1.5em ;
-	border:  1 solid #ACA1A1;
+	border:  1px solid #ACA1A1;
 	border-radius: 10px;
 	margin: 0.4em;
 }
-.container-contacts input[type="submit"]{
+ input[type="submit"]{
 	background: #233451;
 	color: #ffffff;
 	height: 56px;
@@ -249,17 +268,9 @@ footer{
 	line-height: 21px;
 	margin-bottom: 1em;
 }
-::placeholder{
-	color: #223561;
-	font-size: 1.1em;
-	font-weight: 700;
-	line-height: 16px;
-
-}
-:placeholder-shown {
-  border: 2px solid #AB9898;
-}
-
+ input[type="submit"]:hover{
+ 	opacity: 0.7;
+ }
 
 @media (max-width: 890px) {
 	/*body{
@@ -285,17 +296,18 @@ footer{
 		width: 17.em;
 		border-radius: 0px;
 		position: absolute;
-		left:2.38em;
-		bottom: 1.5em;
 	}
 	.container-coverPage p{
 		font-size: 1.4em;
 	}
 }
 
-@media (max-width: 600px) {
+@media (max-width: 600px){
 	body{
-		font-size: 17px;
+		font-size: 18px;
+	}
+	.nav-ul li{
+		font-size: 0.9em;
 	}
 	.container-contacts input[type="text"],
 	.container-contacts input[type="email"],
@@ -303,10 +315,9 @@ footer{
 		width: 90%;
 	}
 	.container-coverPage div{
-		height: 5em;
-		width: 17em;
-		left:2.38em;
-		bottom: 1em;
+		font-size: 0.8em;
+		height: 5.5em;
+		width: 16.5em;
 	}
 	.container-coverPage div > p{
 		font-size: 1.5em;
@@ -315,6 +326,23 @@ footer{
 	.container-mySkills > div{
 		grid-template-columns: repeat(1, 1fr);
 		gap: auto;
+	}
+	.container-briefcase div {
+		grid-template-columns: repeat(2, 1fr);
+		gap: auto;
+	}
+}
+
+@media (max-width: 540px) {
+	body{
+		font-size: 15px;
+	}
+	.container-customers div {
+		display: block;
+		text-align: center;
+	}
+	.container-customers img {
+		margin-top: 2px;
 	}
 }
 
