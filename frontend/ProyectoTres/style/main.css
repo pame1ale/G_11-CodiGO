@@ -202,14 +202,14 @@ input[type="submit"]{
 	grid-template-columns: 50% 50%;
 	margin-top: 0.86em ;
 	justify-content: center;
-	column-gap: 26px;
 }
 .container_2 div .text-box{
 	display: block;
 	margin-top: 0;
 }
 .container_2 .box{
-	width: 393px;;
+	width: 393px;
+	padding: 0 12px;
 }
 .container_1 .box .clst,
 .container_2 .box .clst {
