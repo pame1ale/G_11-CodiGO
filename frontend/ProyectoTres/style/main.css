@@ -1,4 +1,5 @@
 /*General*/
+
 *{
   padding: 0;
   margin: 0;
@@ -26,6 +27,7 @@ header{
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 img{
+	width: 100%;
 	display: block;
 	border-radius: 10px;
 }
@@ -63,6 +65,8 @@ input[type="submit"]{
 	padding: 3px;
 	color: #ffffff;
 }
+
+/* buscador */
 .search{
 		padding: 0.9em 1.85em 0 1.85em;
 	  width: 100%;
@@ -71,7 +75,8 @@ input[type="submit"]{
 	 width: 100%;
 }
 
-/*nav*/
+/* nav*/
+
 .nav-logo{
 	margin: 18px 35px;
 }
@@ -88,8 +93,37 @@ input[type="submit"]{
 	text-decoration: none;
 	color: #242A59;
 }
+.nav-ul a: active{
+	color: #b7356e;
+}
+.nav-ul a:hover{
+	color: #b366;
+}
+
+
+/* img */
+.backendEnd,
+.frontEnd,
+.servidor{
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  width: 100%;
+  position: relative;
+}
+.backendEnd{
+	background-image: url(../images/Rectangle2.png);
+}
+.frontEnd{
+		background-image: url(../images/Rectangle3.png);
+}
+.servidor{
+	background-image: url(../images/Rectangle4.png);
+}
+
 
 /*Section 1*/
+
 .container_1{
 	width: 100%;
 	display: flex;
@@ -117,6 +151,7 @@ input[type="submit"]{
 	width: 100%;
 	position: relative;
 	text-align: justify-all;
+	border-radius: 8px;
 }
 .box .text-box{
 	width: 100%;
@@ -189,7 +224,9 @@ input[type="submit"]{
 .part2 input{
 	height: 24px;
 }
-/*Section 2 */
+
+/* Section 2 */
+
 .container_2{
 	width: 100%;
 	padding: 1.43em 4.39em 4.68em  4.5em;
@@ -202,7 +239,7 @@ input[type="submit"]{
 	grid-template-columns: repeat(2, 1fr);
 	margin-top: 0.86em ;
 	justify-content: center;
-	grid-gap: 10px;
+	grid-gap: 10px 26px;
 }
 .container_2 div .text-box{
 	display: block;
@@ -225,14 +262,21 @@ input[type="submit"]{
 	background: #AD195A;
 }
 
-@media (max-width: 930px){
+@media (max-width: 1060px){
+	body{
+		font-size: 25px ;
+	}
 	.container_1{
 		display: block;
-		padding: 1.28em 1.85em 0 1.85em;
+		padding: 1.28em 1.83em 0 1.8em;
 	}
 	.container_1 .part1,
 	.container_1 .part2{
 		width: 100%;
-		margin-top: 2px;
+		margin-top: 8px;
+		margin-left: 0;
+	}
+	.container_2 div{
+		display: block;
 	}
 }
