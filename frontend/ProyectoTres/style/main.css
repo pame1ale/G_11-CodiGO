@@ -199,16 +199,17 @@ input[type="submit"]{
 }
 .container_2 div {
 	display: grid;
-	grid-template-columns: 50% 50%;
+	grid-template-columns: repeat(2, 1fr);
 	margin-top: 0.86em ;
 	justify-content: center;
+	grid-gap: 10px;
 }
 .container_2 div .text-box{
 	display: block;
 	margin-top: 0;
 }
 .container_2 .box{
-	width: 393px;
+	width: 100%;
 	padding: 0 12px;
 }
 .container_1 .box .clst,
