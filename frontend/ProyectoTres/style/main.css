@@ -55,7 +55,7 @@ footer p{
 	line-height: 13px;
 	font-weight: 600;
 }
-input{
+input[type="submit"]{
 	position: absolute;
 	top: 10px;
 	right: 10px;
@@ -93,7 +93,7 @@ input{
 .container_1{
 	width: 100%;
 	display: flex;
-	overflow: hidden;
+	/*overflow: hidden;*/
 	padding: 1.28em 1.85em 0 1.85em;
 }
 .container_1 .part1{
@@ -159,7 +159,7 @@ input{
 .container_2 .box,
 .part2 .box{
 	height: 102px;
-	overflow: hidden;
+	/*overflow: hidden;*/
 }
 .container_2 .text-box,
 .part2 .text-box{
@@ -192,7 +192,7 @@ input{
 /*Section 2 */
 .container_2{
 	width: 100%;
-	margin: 1.43em 4.39em 4.68em  4.5em;
+	padding: 1.43em 4.39em 4.68em  4.5em;
 }
 .container_2 > h2{
 	color: #000000;
@@ -201,12 +201,27 @@ input{
 	display: grid;
 	grid-template-columns: 50% 50%;
 	margin-top: 0.86em ;
-	column-gap: 26px;
 	justify-content: center;
+	column-gap: 26px;
 }
 .container_2 div .text-box{
 	display: block;
 	margin-top: 0;
+}
+.container_2 .box{
+	width: 393px;;
+}
+.container_1 .box .clst,
+.container_2 .box .clst {
+	background: #26A6BE;
+}
+.container_1 .box .azl,
+.container_2 .box .azl {
+  background: #213576;
+}
+.container_1 .box .mrv,
+.container_2 .box .mrv {
+	background: #AD195A;
 }
 
 @media (max-width: 930px){
