@@ -1,0 +1,64 @@
+/*General*/
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+	width: 100%;
+}
+header{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+header,
+footer{
+	height: 79px;
+}
+header h1{
+	font-family: Roboto;
+	font-size: 34px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 40px;
+}
+header,
+footer,
+.box{
+	background: #C4C4C4;
+}
+.container{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	padding: 40px 11px 34px 11px;
+	justify-content: center;
+}
+.box{
+ width:  calc(50% - 22px*2);
+ height: 133px;
+ margin: 0 11px 26px 11px;
+}
+
+@media (max-width: 872px){
+	header h1{
+		font-size: 24px;
+		line-height: 28px;
+	}
+	.box{
+		background: #FF0505;
+	}
+}
+@media (max-width: 476px){
+		header h1{
+			font-size: 16px;
+			line-height: 19px;
+	}
+	.box{
+		background: #FF8C05;;
+		width: 100%;
+	}
+}
