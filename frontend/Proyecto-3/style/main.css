@@ -56,7 +56,7 @@ h2{
 /*COVERPAGE*/
 .CoverPage {
 	width: 100%;
-	padding: 106px 250px 50px 250px;
+	padding: 106px 150px 50px 150px;
 	display: flex;
 }
 .Part_1,
@@ -107,7 +107,7 @@ h2{
 .Blog,
 .Contact {
 	width: 100%;
-	padding: 0 105px 50px 200px;
+	padding: 0 100px 50px 100px;
 }
 .Briefcase-wrap,
 .Service-wrap{
@@ -129,8 +129,6 @@ h2{
 .Briefcase img{
 	max-height: 220px;
 	max-width: 224px;
-	width: 100%;
-	height: auto;
 	margin: 0 28px 20px 0;
 	border-radius: 8px;
 }
@@ -142,7 +140,7 @@ h2{
 	width: 100%;
 }
 .Briefcase .web_app{
- border-radius: 8px;
+  border-radius: 8px;
 	margin: 20px;
 	padding: 5px;
 	background: rgba(109, 10, 211, 0.8);
@@ -210,4 +208,125 @@ h2{
 }
 .Service-wrap div img{
 	margin: 20px
+}
+.Service-wrap div:hover{
+	border: 7px solid #5A0CB0;
+}
+.Service-wrap div p:hover{
+	background: #5A0CB0;;
+	color: #ffffff;
+}
+
+/* BLOG */
+.Blog-flex{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.Blog-flex p,
+.Blog-flex a{
+	font-size: 11px;
+	font-weight: 400;
+	line-height: 20px;
+	padding: 5px 12px;
+}
+
+.Blog-flex h5{
+	font-family: 'Poppins', sans-serif;
+	font-size: 12px;
+	font-weight: 600;
+	line-height: 18px;
+	padding: 5px 15px;
+	margin: 2px 0;
+	border-left: 4px solid #C4C4C4;
+}
+.bloq-2 .bloq-2-flex{
+		display: flex;
+}
+.bloq-1,
+.bloq-2,
+.bloq-3{
+	width: 350px;
+	margin: 5px;
+}
+.bloq-1 img ,
+.bloq-3 img {
+	margin-bottom: 5px;
+	margin-left: 5px;
+}
+.bloq-2 img {
+	margin: 3px 5px;
+}
+.bloq-3 button{
+	font-size: 13px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 15px;	
+	background: #6D0AD3;
+	padding: 15px 18px;
+	border-radius: 0 8px 8px 0;
+	border: none;
+}
+
+/* CONTACTO  */
+.contact-grid{
+	width: 100%;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+
+}.contact-grid select,
+.contact-grid input{
+	padding: 15px;
+	margin: 5px;
+	border-radius: 8px;
+}
+.Contact textarea{
+	margin: 5px;
+	padding: 15px;
+	border-radius: 8px;
+	width: 100%;
+}
+.button{
+		display: flex;
+	justify-content: center;
+}
+.button input{
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 24px;
+	background: #6D0AD3;
+	padding: 10px 15px;
+	border:  none;
+	border-radius: 8px;
+	color: #ffffff;
+}
+.contact-grid input:hover,
+.Contact textarea:hover,
+.contact-grid select:hover{
+	border: 1px solid #10d29b;
+}
+.contact-grid input:sele,
+.Contact textarea:focus,
+.contact-grid select:focus{
+	border: 1px solid #6D0AD3;
+}
+
+.button input:hover{
+	background: #10d29b;
+}
+
+/* FOOTER */
+.footer h3{
+	font-size: 28px;
+	font-weight: 500;
+	line-height: 35px;
+	text-align: center;
+	color: #00CF95;
+}
+.footer .nav-ul{
+	display: flex;
+	justify-content: center;
+}
+.footer li {
+	padding: 10px 10px;
 }

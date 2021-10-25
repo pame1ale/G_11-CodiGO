@@ -84,99 +84,122 @@
 	<section class="Service">
 		<h2>SERVICIOS</h2>
 		<div class="Service-wrap">
-			<div>
-				<img src="./images/ux.png">
-				<p>UX / UI</p>
-			</div>
-			<div>
-				<img src="./images/frond-end.png">
-				<p>FRONT END</p>
-			</div>
-			<div>
-				<img src="./images/back-end.png">
-				<p>BACK END</p>
-			</div>
-			<div>
-				<img src="./images/apps.png">
-				<p>APPS</p>
-			</div>
-			<div>
-				<img src="./images/consulting.png">
-				<p>CONSULTING</p>
-			</div>
-			<div>
-				<img src="./images/cloud.png">
-				<p>CLOUD</p>
-			</div>
+			<a href="">
+				<div>
+					<img src="./images/ux.png">
+					<p>UX / UI</p>
+				</div>
+			</a>
+			<a href="">
+				<div>
+					<img src="./images/frond-end.png">
+					<p>FRONT END</p>
+				</div>
+			</a>
+			<a href="">
+				<div>
+					<img src="./images/back-end.png">
+					<p>BACK END</p>
+				</div>
+			</a>
+			<a href="">
+				<div>
+					<img src="./images/apps.png">
+					<p>APPS</p>
+				</div>
+			</a>
+			<a href="">
+				<div>
+					<img src="./images/consulting.png">
+					<p>CONSULTING</p>
+				</div>
+			</a>
+			<a href="">
+				<div>
+					<img src="./images/cloud.png">
+					<p>CLOUD</p>
+				</div>
+			</a>
 		</div>
 	</section>
 
 	<section class="Blog">
 		<h2>BLOG</h2>
-		<div>
-			<img src="./images/Rectangle18.png">
-			<div>
-				<h5>CSS3 ANIMATIONS</h5>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing , consectetur adipisc,... </p>
-				<a href="">Leer mas</a>
+		<div class="Blog-flex">
+			<div class="bloq-1">
+				<img src="./images/Rectangle18.png">
+				<div>
+					<h5>JS El nuevo Rey</h5>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit Lorem ipsum dolor sit amet, consectetur adipiscing elit Lorem ipsum dolor sit amet, consectetur adipisc,...</p>
+					<a href="">Leer mas</a>
+				</div>
 			</div>
-		</div>
-		<div>
-			<img src="./images/Rectangle19.png">
-		</div>
-		<div>
-			<div>
-				<h5>Javascript animation</h5>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing , consectetur adipisc,... </p>
-				<a href="">Leer mas</a>
+			<div class="bloq-2">
+				<div class="bloq-2-flex">
+					<div>
+						<h5>CSS3 ANIMATIONS</h5>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing , consectetur adipisc,... </p>
+						<a href="">Leer mas</a>
+					</div>
+					<img src="./images/Rectangle19.png">
+				</div>
+				<div class="bloq-2-flex">
+					<img src="./images/Rectangle21.png">
+					<div>
+						<h5>JS Engine</h5>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing , consectetur adipisc,...</p>
+						<a href="">Leer mas</a>
+					</div>
+				</div>
 			</div>
-			<img src="./images/Rectangle20.png">
-		</div>
-		<div>
-				<h5>JS El nuevo Rey</h5>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit Lorem ipsum dolor sit amet, consectetur adipiscing elit Lorem ipsum dolor sit amet, consectetur adipisc,...</p>
-				<a href="">Leer mas</a>
-			</div>
-			<img src="./images/Rectangle21.png">
-		</div>
-		<div>
-				<h5>JS Engine</h5>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing , consectetur adipisc,...</p>
-				<a href="">Leer mas</a>
-		</div>
-		<div>
-			<p>Nos gusta escribir y compartir sobre tecnologia, diseño, tendencias, y muchas cosas mas. Si te gustaria recibir nuestras pubicaciones subscribete </p>
-			<div>
-				<input type="email" name="">
-				<button>Suscribirse</button>
-			</div>
+			<div class="bloq-3">
+				<div>
+					<h5>Javascript animation</h5>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing , consectetur adipisc,... </p>
+					<a href="">Leer mas</a>
+				</div>
+				<img src="./images/Rectangle20.png">
+				<p>Nos gusta escribir y compartir sobre tecnologia, diseño, tendencias, y muchas cosas mas. Si te gustaria recibir nuestras pubicaciones subscribete </p>
+				<div>
+					<input type="email" name="email" placeholder="E-mail">
+					<button>Suscribirse</button>
+				</div>
+			</div>	
 		</div>
 	</section>
 
 	<section class="Contact">
 		<h2>CONTACTO</h2>
 		<form>
-			<div>
+			<div class="contact-grid">
 				<input type="text" name=nombre placeholder="Nombre">
 				<input type="text" name="nombre" placeholder="Telefono">
-				<select>
-					<option></option>
+				<select name="proyecto">
+					<option disabled  selected >Tipo de proyecto</option>
+					<option value="value1">Value 1</option>
+				  <option value="value2" >Value 2</option>
+				  <option value="value3">Value 3</option>
 				</select>
-				<select>
-					<option></option>
+				<select name="presupuesto">
+					<option disabled  selected >Presupuesto</option>
+					 <option value="value1">Value 1</option>
+				  <option value="value2" >Value 2</option>
+				  <option value="value3">Value 3</option>
 				</select>
 			</div>
-			<textarea></textarea>
-			<input type="submit" name="boton" value="Enviar">
+			<textarea placeholder="Cuetanos mas"></textarea>
+			<div class="button">
+				<input type="submit" name="boton" value="Enviar">
+			</div>
 		</form>
 	</section>
 </main>
 
-<footer>
-	<h2>GRACIAS POR VISITARNOS</h2>
-	<div>
+<footer class="footer">
+		<div>
 		<i><img src=""></i>
-	</div>
+		</div>
+	<h3>GRACIAS POR VISITARNOS</h3>
 	<div>
 		<ul class="nav-ul">
 				<li ><a href="#"> Sobre mi</a></li>
