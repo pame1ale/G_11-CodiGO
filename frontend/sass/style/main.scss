@@ -126,6 +126,11 @@ img{
 }
 .card-2 .precio{
     @include precio(48px);
+    & del{
+        font-size: 24px;
+        color: #6E798C;
+        text-align: right;
+    }
 }
 .card-2 button{
     @include btn(100%,$color-btn,18px);

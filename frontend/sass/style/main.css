@@ -157,6 +157,12 @@ img {
   letter-spacing: 0em;
 }
 
+.card-2 .precio del {
+  font-size: 24px;
+  color: #6E798C;
+  text-align: right;
+}
+
 .card-2 button {
   width: 100%;
   background: #2ECC71;
