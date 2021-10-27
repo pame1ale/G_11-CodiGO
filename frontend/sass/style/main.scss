@@ -1,12 +1,22 @@
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Open+Sans&display=swap');
+
 $color-btn:#2ECC71;
 $color-btn-hover:#333366;
+
+$color-headding: #081F32;
+$color-text-info:#A5ADBB;
+$color-additional-text: #6E798C;
 
 $font-size-h2:24px;
 $font-size-paragrah:16px;
 
+$font-family-title: 'DM Serif Display', serif;
+$ont-family-text: 'Open Sans', sans-serif;
+
 @mixin box($box-size){
     width: 100%;
-    border-radius: 12px;
+    border-radius: 16px 16px 0 0 ;
     background: #ffffff;
     max-width: $box-size;
     margin: 15px;
@@ -41,6 +51,7 @@ $font-size-paragrah:16px;
 }
 %paragraph{
     font-size: $font-size-paragrah;
+    color: $color-additional-text;
     font-style: normal;
     font-weight: 400;
     line-height: 25px;
@@ -49,7 +60,9 @@ $font-size-paragrah:16px;
     text-align: justify;
 }
 %h2{
+    font-family: $font-family-title;
     font-size: $font-size-h2;
+    color: $color-headding;
     font-style: normal;
     font-weight: 400;
     line-height: 25px;
@@ -62,6 +75,7 @@ $font-size-paragrah:16px;
 
 
 body{
+    font-family: $font-size-paragrah;
     background: #EFF0F3;
     box-sizing: border-box;
     overflow-x: hidden;
@@ -73,7 +87,10 @@ h2{
 img{
     max-width: 100%
 }
-.paragraph{
+a{
+    padding-left: 3px;
+}
+.extra-info{
     @extend %paragraph;
 }
 /* SECTION 1*/
@@ -86,7 +103,7 @@ img{
         }
     }
 }
-.card-3 .precio{
+.card-3 .price{
     @include precio(28px)
     & del{
         font-size: 20px;
@@ -100,9 +117,9 @@ img{
 .card-3 button{
     @include btn(auto,$color-btn, 9px)
 }
-.card-3 .extra-info{
+.card-3 .text-info{
     @include display(space-between,center )
-    color:#6E798C;
+    color:$color-text-info;
 }
 .card-3 .text-box div:last-child{
     @include display(space-between,center );
@@ -124,7 +141,7 @@ img{
 .card-2 .title{
     @include display(space-between,center );
 }
-.card-2 .precio{
+.card-2 .price{
     @include precio(48px);
     & del{
         font-size: 24px;
@@ -135,8 +152,9 @@ img{
 .card-2 button{
     @include btn(100%,$color-btn,18px);
 }
-.card-2 .star-precio{
+.card-2 .star-price{
     @include display(space-between,center );
+    flex-wrap:wrap;
 }
 .card-2 .p{
     text-align: center;
@@ -144,11 +162,10 @@ img{
 }
 .card-2 .room{
     @include display(center,flex-end);
-    flex-wrap:wrap;
   & p{
     color:  #007AE9;
     padding: 10px;
-    margin: 5px;
+    margin: 15px 5px;
     border: 1px solid #eeeeee;
   }
 }
@@ -161,6 +178,7 @@ img{
 .card-2 button:hover{
     @include btn(100%,$color-btn-hover,17px);
     transition: 0.5s;
+}
 
     
     

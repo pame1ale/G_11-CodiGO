@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Open+Sans&display=swap");
 .card-3, .card-2 {
   width: 100%;
   display: -webkit-box;
@@ -11,8 +12,9 @@
   margin: 10px;
 }
 
-.paragraph {
+.extra-info {
   font-size: 16px;
+  color: #6E798C;
   font-style: normal;
   font-weight: 400;
   line-height: 25px;
@@ -22,7 +24,9 @@
 }
 
 h2 {
+  font-family: "DM Serif Display", serif;
   font-size: 24px;
+  color: #081F32;
   font-style: normal;
   font-weight: 400;
   line-height: 25px;
@@ -35,6 +39,7 @@ h2 {
 }
 
 body {
+  font-family: 16px;
   background: #EFF0F3;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -45,10 +50,14 @@ img {
   max-width: 100%;
 }
 
+a {
+  padding-left: 3px;
+}
+
 /* SECTION 1*/
 .card-3 .box-1 {
   width: 100%;
-  border-radius: 12px;
+  border-radius: 16px 16px 0 0;
   background: #ffffff;
   max-width: 360px;
   margin: 15px;
@@ -56,7 +65,7 @@ img {
           box-shadow: 5px 5px 5px #aaaaaa;
 }
 
-.card-3 .precio {
+.card-3 .price {
   font-size: 28px;
   font-style: normal;
   font-weight: 400;
@@ -64,7 +73,7 @@ img {
   letter-spacing: 0em;
 }
 
-.card-3 .precio del {
+.card-3 .price del {
   font-size: 20px;
   color: #F8593B;
   margin-left: 9px;
@@ -91,7 +100,7 @@ img {
   border: none;
 }
 
-.card-3 .extra-info {
+.card-3 .text-info {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -101,7 +110,7 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: #6E798C;
+  color: #A5ADBB;
 }
 
 .card-3 .text-box div:last-child {
@@ -119,7 +128,7 @@ img {
 /* SECTION 2*/
 .card-2 .box-2_1 {
   width: 100%;
-  border-radius: 12px;
+  border-radius: 16px 16px 0 0;
   background: #ffffff;
   max-width: 512px;
   margin: 15px;
@@ -129,7 +138,7 @@ img {
 
 .card-2 .box-2_2 {
   width: 100%;
-  border-radius: 12px;
+  border-radius: 16px 16px 0 0;
   background: #ffffff;
   max-width: 608px;
   margin: 15px;
@@ -149,7 +158,7 @@ img {
           align-items: center;
 }
 
-.card-2 .precio {
+.card-2 .price {
   font-size: 48px;
   font-style: normal;
   font-weight: 400;
@@ -157,7 +166,7 @@ img {
   letter-spacing: 0em;
 }
 
-.card-2 .precio del {
+.card-2 .price del {
   font-size: 24px;
   color: #6E798C;
   text-align: right;
@@ -172,7 +181,7 @@ img {
   border: none;
 }
 
-.card-2 .star-precio {
+.card-2 .star-price {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -182,7 +191,8 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-   flex-wrap:wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .card-2 .p {
@@ -205,7 +215,7 @@ img {
 .card-2 .room p {
   color: #007AE9;
   padding: 10px;
-  margin: 5px;
+  margin: 15px 5px;
   border: 1px solid #eeeeee;
 }
 
