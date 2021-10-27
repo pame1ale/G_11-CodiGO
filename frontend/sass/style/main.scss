@@ -144,6 +144,7 @@ img{
 }
 .card-2 .room{
     @include display(center,flex-end);
+    flex-wrap:wrap;
   & p{
     color:  #007AE9;
     padding: 10px;
@@ -160,7 +161,6 @@ img{
 .card-2 button:hover{
     @include btn(100%,$color-btn-hover,17px);
     transition: 0.5s;
-}
 
     
     
