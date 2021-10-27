@@ -32,17 +32,29 @@ h2 {
   line-height: 25px;
   letter-spacing: 0.01em;
   text-align: left;
+  margin-bottom: 24px;
 }
 
 .card-3 .box-1 .text-box, .card-2 .text-box {
   padding: 27px 35px;
 }
 
+.img a {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 body {
   font-family: 16px;
   background: #EFF0F3;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
   overflow-x: hidden;
 }
 
@@ -110,6 +122,7 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin: 15px 0;
   color: #A5ADBB;
 }
 
@@ -123,6 +136,10 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.box-1 .img {
+  position: relative;
 }
 
 /* SECTION 2*/
@@ -198,6 +215,7 @@ a {
 .card-2 .p {
   text-align: center;
   color: #2ECC71;
+  margin: 15px 0;
 }
 
 .card-2 .room {
@@ -217,6 +235,11 @@ a {
   padding: 10px;
   margin: 15px 5px;
   border: 1px solid #eeeeee;
+}
+
+.box-2_1 .img,
+.box-2_2 .img {
+  position: relative;
 }
 
 /* hover */
@@ -240,5 +263,39 @@ a {
   border: none;
   -webkit-transition: 0.5s;
   transition: 0.5s;
+}
+
+.img a:hover {
+  opacity: 0.8;
+}
+
+@media (max-width: 420px) {
+  .card-3 {
+    text-align: center;
+    margin: 0;
+  }
+  .card-3 .box-1 {
+    width: 100%;
+    border-radius: 16px 16px 0 0;
+    background: #ffffff;
+    max-width: 90%;
+    margin: 15px;
+    -webkit-box-shadow: 5px 5px 5px #aaaaaa;
+            box-shadow: 5px 5px 5px #aaaaaa;
+    margin: 10px;
+  }
+  .card-2 {
+    margin: 0;
+  }
+  .box-2 {
+    width: 100%;
+    border-radius: 16px 16px 0 0;
+    background: #ffffff;
+    max-width: 90%;
+    margin: 15px;
+    -webkit-box-shadow: 5px 5px 5px #aaaaaa;
+            box-shadow: 5px 5px 5px #aaaaaa;
+    margin: 10px;
+  }
 }
 /*# sourceMappingURL=main.css.map */
