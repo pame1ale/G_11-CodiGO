@@ -1,0 +1,165 @@
+$color-btn:#2ECC71;
+$color-btn-hover:#333366;
+
+$font-size-h2:24px;
+$font-size-paragrah:16px;
+
+@mixin box($box-size){
+    width: 100%;
+    border-radius: 12px;
+    background: #ffffff;
+    max-width: $box-size;
+    margin: 15px;
+    box-shadow: 5px 5px 5px #aaaaaa;
+}
+@mixin precio ($size) {
+    font-size: $size;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0em;
+}
+@mixin display($justify , $align){
+    display:flex;
+    justify-content: $justify;
+    align-items: $align;
+}
+@mixin btn($width , $color , $padding){
+    width: $width;
+    background: $color;
+    padding: $padding;
+    color: #ffffff;
+    border-radius: 10px;
+    border:none;
+}
+%container-box {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 10px;
+}
+%paragraph{
+    font-size: $font-size-paragrah;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0em;
+    color:#6E798C;
+    text-align: justify;
+}
+%h2{
+    font-size: $font-size-h2;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0.01em;
+    text-align: left;
+}
+%text-box{
+    padding: 27px 35px;
+}
+
+
+body{
+    background: #EFF0F3;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+h2{
+    @extend %h2;
+}
+img{
+    max-width: 100%
+}
+.paragraph{
+    @extend %paragraph;
+}
+/* SECTION 1*/
+.card-3{
+    @extend %container-box;
+    & .box-1{
+        @include box(360px);
+        & .text-box{
+            @extend  %text-box;
+        }
+    }
+}
+.card-3 .precio{
+    @include precio(28px)
+    & del{
+        font-size: 20px;
+        color: #F8593B;
+        margin-left: 9px; 
+    }
+}
+.card-3 .title{
+    @include display(space-between,center ) ;
+}
+.card-3 button{
+    @include btn(auto,$color-btn, 9px)
+}
+.card-3 .extra-info{
+    @include display(space-between,center )
+    color:#6E798C;
+}
+.card-3 .text-box div:last-child{
+    @include display(space-between,center );
+}
+
+/* SECTION 2*/
+.card-2{
+    @extend %container-box;
+    & .box-2_1{
+        @include box(512px);
+    }
+    & .box-2_2{
+        @include box(608px);
+    }
+    & .text-box{
+        @extend  %text-box;
+    }
+}
+.card-2 .title{
+    @include display(space-between,center );
+}
+.card-2 .precio{
+    @include precio(48px);
+}
+.card-2 button{
+    @include btn(100%,$color-btn,18px);
+}
+.card-2 .star-precio{
+    @include display(space-between,center );
+}
+.card-2 .p{
+    text-align: center;
+    color:#2ECC71;
+}
+.card-2 .room{
+    @include display(center,flex-end);
+  & p{
+    color:  #007AE9;
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid #eeeeee;
+  }
+}
+
+/* hover */
+.card-3 button:hover{
+    @include btn(auto,$color-btn-hover,8px);
+    transition: 0.5s;
+}
+.card-2 button:hover{
+    @include btn(100%,$color-btn-hover,17px);
+    transition: 0.5s;
+}
+
+    
+    
+
+  
+  
+  

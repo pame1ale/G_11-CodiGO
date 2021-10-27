@@ -1,0 +1,227 @@
+.card-3, .card-2 {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 10px;
+}
+
+.paragraph {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: 0em;
+  color: #6E798C;
+  text-align: justify;
+}
+
+h2 {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: 0.01em;
+  text-align: left;
+}
+
+.card-3 .box-1 .text-box, .card-2 .text-box {
+  padding: 27px 35px;
+}
+
+body {
+  background: #EFF0F3;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* SECTION 1*/
+.card-3 .box-1 {
+  width: 100%;
+  border-radius: 12px;
+  background: #ffffff;
+  max-width: 360px;
+  margin: 15px;
+  -webkit-box-shadow: 5px 5px 5px #aaaaaa;
+          box-shadow: 5px 5px 5px #aaaaaa;
+}
+
+.card-3 .precio {
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: 0em;
+}
+
+.card-3 .precio del {
+  font-size: 20px;
+  color: #F8593B;
+  margin-left: 9px;
+}
+
+.card-3 .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card-3 button {
+  width: auto;
+  background: #2ECC71;
+  padding: 9px;
+  color: #ffffff;
+  border-radius: 10px;
+  border: none;
+}
+
+.card-3 .extra-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #6E798C;
+}
+
+.card-3 .text-box div:last-child {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+/* SECTION 2*/
+.card-2 .box-2_1 {
+  width: 100%;
+  border-radius: 12px;
+  background: #ffffff;
+  max-width: 512px;
+  margin: 15px;
+  -webkit-box-shadow: 5px 5px 5px #aaaaaa;
+          box-shadow: 5px 5px 5px #aaaaaa;
+}
+
+.card-2 .box-2_2 {
+  width: 100%;
+  border-radius: 12px;
+  background: #ffffff;
+  max-width: 608px;
+  margin: 15px;
+  -webkit-box-shadow: 5px 5px 5px #aaaaaa;
+          box-shadow: 5px 5px 5px #aaaaaa;
+}
+
+.card-2 .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card-2 .precio {
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: 0em;
+}
+
+.card-2 button {
+  width: 100%;
+  background: #2ECC71;
+  padding: 18px;
+  color: #ffffff;
+  border-radius: 10px;
+  border: none;
+}
+
+.card-2 .star-precio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card-2 .p {
+  text-align: center;
+  color: #2ECC71;
+}
+
+.card-2 .room {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.card-2 .room p {
+  color: #007AE9;
+  padding: 10px;
+  margin: 5px;
+  border: 1px solid #eeeeee;
+}
+
+/* hover */
+.card-3 button:hover {
+  width: auto;
+  background: #333366;
+  padding: 8px;
+  color: #ffffff;
+  border-radius: 10px;
+  border: none;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.card-2 button:hover {
+  width: 100%;
+  background: #333366;
+  padding: 17px;
+  color: #ffffff;
+  border-radius: 10px;
+  border: none;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+/*# sourceMappingURL=main.css.map */
