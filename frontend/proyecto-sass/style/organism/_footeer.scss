@@ -1,0 +1,10 @@
+.footer{
+    display: flex;
+    justify-content: center;
+    &__info p{
+        color: #555555;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 17px;
+    }
+}
