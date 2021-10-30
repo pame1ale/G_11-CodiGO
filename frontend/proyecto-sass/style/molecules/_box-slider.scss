@@ -1,22 +1,31 @@
 .slider__box{
+    width: 100%;
+    height: auto;
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
-    align-items: flex-end;
+    align-items: center;
     padding: 12px;
+    border: 1px solid #dddddd;
     margin: 32px 0;
-    box-shadow: 2px 5px 4px rgba(8, 8,8, 0.5);
+    box-shadow: 0 5px 4px rgba(8, 8,8, 0.5);
     border-radius: 4px;
     background: #ffffff;
-    & > div{
+    & > img{
+        height: 100%;
+    }
+    & .box__info{
+        padding: 8px;
+        flex-grow: 1;
         display: flex;
-        align-items: flex-end;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
         & p ,
           h3,
           h5{
             color: #334680;
             font-family: $font-roboto;
-            padding: 8px 0;
+            margin: 14px 0;
         }
         & p,
           h5 {
@@ -35,19 +44,27 @@
             border: 1px solid #334680;
             border-radius: 4px;
         }
-    }
+
     &__5{
         align-items: flex-start;
     }
+
+    & .box__info__extra{
+        display: flex;
+    }
+}
     & .box__icon{
         display: flex;
         align-items: center;
-        padding-left:28px ;
+        padding-right:28px ;
         color: #B9BDCF;
         margin-top: 5px;
         & .icon {
             padding-right: 3px;
         }
+    }
+    &:hover{
+        background: rgba(8, 8,8, 0.05);
     }
 }
 

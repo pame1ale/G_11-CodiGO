@@ -2,12 +2,11 @@ main{
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    & .slider{
-        width: 100%;
-        max-width: 790px;
-    }
     & .location{
-        width: 379px;
-        max-width: 100%;
+        width: 100%;
+        max-width: 379px;
+    }
+    & .slider{
+        flex-grow: 1;
     }
 }
