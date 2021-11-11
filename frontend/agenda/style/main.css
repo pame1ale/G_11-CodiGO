@@ -1,5 +1,6 @@
 	*{
 		margin: 0;
+		padding: 0;
 		box-sizing: border-box;
 	}
 	.body{
@@ -8,7 +9,10 @@
 	    display: flex;
 	    height: 100vh;
 	    flex-direction: column;
-	    justify-content: space-between;
+	    /*justify-content: space-between;*/
+	}
+	main{
+    flex-grow: 1;
 	}
 	input{
 		width: 100%;
@@ -18,7 +22,7 @@
 	}
 	form , 
 	.app {
-		margin: 0 200px;
+		margin: 0 180px;
 	}
 	form .box-input{
 		display: grid;
@@ -42,7 +46,7 @@
 		margin: 10px 0;
 	}
 	form button:hover{
-		background: rgba(55, 45, 90, 0.8);
+		opacity: 0.75;
 		cursor: pointer;
 	}
 
@@ -58,7 +62,7 @@
 		font-size: 32px;
 		font-weight: 700;
 		line-height: 37px;
-		margin: 45px 200px;
+		margin: 45px 180px;
 		color: #009B9B;
 	}
 	footer p {
@@ -78,7 +82,7 @@
 	}
 	.card{
 		position: relative;
-		padding: 21px 42px;
+		padding: 21px 38px;
 		margin : 21px;
 		margin-left: 0;
 		text-align: center;
@@ -114,9 +118,12 @@
       height: 30px;
       border-radius: 100%;
       background: #FF4040;
-      color: white;
+      color: #ffffff;
       border: 1px solid #FF4040;
-      cursor: pointer;
+    }
+    .card button:hover{
+    	opacity: 0.75;
+    	cursor: pointer;
     }
 
     @media (max-width: 1000px){
@@ -125,10 +132,14 @@
 		margin: 0 100px;
 		}
 		.h2{
-		margin: 15px 100px;
+		margin: 25px 100px;
 		}
     }
     @media (max-width: 800px){
+    	form , 
+		.app {
+		margin: 0 40px;
+		}
 	    form .box-input{
 			display: grid;
 			grid-template-columns: repeat(1, 1fr);
