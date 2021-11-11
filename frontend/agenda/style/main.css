@@ -1,0 +1,136 @@
+	*{
+		margin: 0;
+		box-sizing: border-box;
+	}
+	.body{
+		width: 100%;
+	    font-family: arial;
+	    display: flex;
+	    height: 100vh;
+	    flex-direction: column;
+	    justify-content: space-between;
+	}
+	input{
+		width: 100%;
+		padding: 18px;
+		transition: all .5s ease;
+		margin:7px ;
+	}
+	form , 
+	.app {
+		margin: 0 200px;
+	}
+	form .box-input{
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-column-gap: 20px;
+	}
+	input:focus{
+		outline: none;
+	}
+	.button{
+		text-align: center;
+	}
+	form button {
+		max-width: 100%;
+		text-align: center;
+		width: 226px;
+		padding: 10px;
+		background: #5500C1;
+		color:  white;
+		border 1px solid #5500C1;
+		margin: 10px 0;
+	}
+	form button:hover{
+		background: rgba(55, 45, 90, 0.8);
+		cursor: pointer;
+	}
+
+	h1{
+		font-size: 22px;
+		font-weight: 700;
+		line-height: 25px;
+		padding: 43px 0 43px 23px;
+		color: #ffffff;
+		background: #5500C1;
+	}
+	.h2{
+		font-size: 32px;
+		font-weight: 700;
+		line-height: 37px;
+		margin: 45px 200px;
+		color: #009B9B;
+	}
+	footer p {
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 16px;
+		padding: 23px 28px;
+		background: #5500C1;
+		color: #ffffff;
+	}
+	.app{
+		/*display: grip;
+		grid-template-columns: repeat(3, 1fr);*/
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	.card{
+		position: relative;
+		padding: 21px 42px;
+		margin : 21px;
+		margin-left: 0;
+		text-align: center;
+		width: 231px;
+		border: 1px solid #969696;
+	}
+	.card figure img{
+		height: 147px;
+		width: 147px;
+		border-radius: 50%;
+		border: 2px solid #009B9B;
+	}
+	.card h2 ,
+	.card p{
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 16px;
+		color: #000000;
+		margin: 0;
+		padding-top: 13px;
+	}
+	.card h3{
+		font-weight: bold;
+		font-size: 12px;
+		line-height: 14px;
+		color: #5500C1;
+	}
+	.card button {
+      position: absolute;
+      top: -15px;
+      right: -15px;
+      width: 30px;
+      height: 30px;
+      border-radius: 100%;
+      background: #FF4040;
+      color: white;
+      border: 1px solid #FF4040;
+      cursor: pointer;
+    }
+
+    @media (max-width: 1000px){
+    	form , 
+		.app {
+		margin: 0 100px;
+		}
+		.h2{
+		margin: 15px 100px;
+		}
+    }
+    @media (max-width: 800px){
+	    form .box-input{
+			display: grid;
+			grid-template-columns: repeat(1, 1fr);
+		}
+	}

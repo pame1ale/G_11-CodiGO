@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AGENDA</title>
+  <link rel="stylesheet" type="text/css" href="./style/main.css">
+</head>
+
+<body>
+	<div class="body">
+		<header>
+		<h1>AGENDA codiGO</h1>
+		</header>
+
+		<h2 class="h2" >Agregar contacto</h2>
+		<form>
+			<div class="box-input">
+				<input class="js_name" type="text" placeholder="Nombre" >
+				<input  class="js_lastname" type="text" placeholder="Apellido" >
+				<input  class="js_phone" type="number" placeholder="Telefono" >
+				<input  class="js_adress" type="text" placeholder="Dirección" >
+				<input  class="js_photo" type="text" placeholder="URL FOTOGRAGIA" >
+				<input  class="js_alias" type="text" placeholder="Alias" >
+			</div>
+			<div class="button">
+				<button>Crear Contacto</button>
+			</div>
+		</form>
+
+		<div id="app" class="app"></div>
+		<footer>
+			<p>Todos los derechos reservados | 2020</p>
+		</footer>
+	</div>
+
+<script type="text/javascript">
+	const inputName = document.querySelector('.js_name');
+	const inputLastName = document.querySelector('.js_lastname');
+	const inputPhone = document.querySelector('.js_phone');
+	const inputAdress = document.querySelector('.js_adress');
+	const inputPhoto = document.querySelector('.js_photo');
+	const inputAlias = document.querySelector('.js_alias');
+    const form = document.querySelector('form');
+    const app = document.getElementById('app');
+
+    form.addEventListener('submit', function (e) {
+      e.preventDefault()
+
+      const article = document.createElement('article');
+      article.innerHTML = `
+      	<figure>
+			<img src = ${inputPhoto.value} ></img>
+		</figure>
+        <h2>${inputName.value} ${inputLastName.value}</h2>
+		<h3>${inputAlias.value}</h3>
+		<p><img src = ./img/phone.png> ${inputAlias.value}</p>
+		<p><img src = ./img/home.png> ${inputAlias.value}</p>
+		<button> X </button>
+      `
+      article.classList.add('card')
+      article.querySelector('button').onclick = function () {
+        const flag = confirm('Estas seguro que deseas eliminar la tarjeta?');
+        if (flag) app.removeChild(article)
+        // if (flag) article.remove()
+      }
+
+      app.appendChild(article)
+
+      this.reset()
+    })
+
+</script>
+
+</body>
+</html>
