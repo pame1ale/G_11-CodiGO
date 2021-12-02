@@ -7,6 +7,12 @@
   font-family: "Quicksand", sans-serif;
   font-size: 24px;
   font-weight: medium;
+  color: #23233b;
+}
+.h3 {
+  font-family: "Quicksand", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
 }
 .p {
   font-family: "Ubuntu", sans-serif;
@@ -22,7 +28,7 @@
 }
 .titulo_a {
   font-size: 24px;
-  color: lightgrey;
+  color: #96c7c1;
   text-decoration: none;
 }
 .boxes {
@@ -32,7 +38,7 @@
   grid-gap: 4;
 }
 .box {
-  background-image: url("../src/img/header.App");
+  background-image: url("../img/quiz.png");
   width: 45%;
   margin: 8px;
   height: 238px;

@@ -13,13 +13,13 @@
   flex-direction: column;
   justify-content: center;
   text-decoration: none;
-  color: black;
+  color: #23233B;
 }
 .btna:hover {
   color: lightgrey;
 }
 .btna:active {
-  color: lightgrey;
+  color: #96C7C1;
 }
 .material-icons-outlined {
   font-size: 35px;
