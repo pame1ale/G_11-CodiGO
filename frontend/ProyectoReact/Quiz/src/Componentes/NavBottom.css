@@ -1,0 +1,26 @@
+.bottom-top {
+  width: 100%;
+  background: white;
+  display: flex;
+  height: 100px;
+  justify-content: space-evenly;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+}
+.btna {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-decoration: none;
+  color: black;
+}
+.btna:hover {
+  color: lightgrey;
+}
+.btna:active {
+  color: lightgrey;
+}
+.material-icons-outlined {
+  font-size: 35px;
+}

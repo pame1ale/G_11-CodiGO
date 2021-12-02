@@ -1,0 +1,10 @@
+import "./header.css";
+function Header() {
+  return (
+    <header className="header">
+      <a href=""></a>
+      <h1 className="headerH1">Quizz</h1>
+    </header>
+  );
+}
+export { Header };

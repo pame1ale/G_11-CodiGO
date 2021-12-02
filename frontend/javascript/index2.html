@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+
+<script type="text/javascript">
+	
+const users =[
+{ //0
+	name : 'ale',
+	lastname:'cornejo',
+	age: 26,
+},
+{//1
+	name : 'pame',
+	lastname:'cornejo',
+	age: 30,
+},
+{//2
+	name : 'karo',
+	lastname:'castillo',
+	age: 35,
+},
+{//3
+	name : 'marta',
+	lastname:'bustinza',
+	age: 20,
+},
+];
+
+function esMayor30(edad){
+	return edad > 30;
+}
+
+console.log('primer elemento ', users[0].age, esMayor30(users[0].age));
+
+for (let i = 0 ; i < users.length; i++) {
+	console.log(`index  elemento ${i} ${esMayor30(users[i].age)}`);
+}
+
+const number = [
+	[0,1,2,3,4,5],
+	[6,7,8,9,10,11],
+];
+
+// for 
+for (let i = 0 ; i < number.length; i++) {
+	console.log(number[i]);
+	for (let i = 0 ; i < number.length; i++) {
+		console.log(number[i][i]);
+	}
+}
+
+// while
+let n = 0;
+while (n < 3){
+	n++;
+	console.log('hasta que la condicion no se cumpla');
+}
+
+
+// do while
+do{
+	console.log('al menos una cez');
+}while(false);
+
+// break 
+for (let i = 0 ; i < 10; i++) {
+	console.log('index', i);
+
+	if(i == 4) break; // rompe en 4
+}
+
+
+// continue 
+for (let i = 0 ; i < 10; i++) {
+	if(i == 4) continue;
+		console.log('index', i); // salta el 4 al 5
+}
+
+// for in 
+const perro ={
+	raza: 'doberman',
+	edad : 3,
+	color : 'negro',
+	altura : '80cm',
+	pais: 'peru',
+};
+
+for (const key in perro){ // recorrer objetos
+	console.log('key' , key);
+	console.log('value', perro[key]);
+
+}
+
+</script>
+
+</body>
+</html>
+
+
+

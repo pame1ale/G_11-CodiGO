@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv=""X-UA-Compatible content="IE=edge">
+	<script src =./scope.js type="text/javascript"></script>
+	<title>javascript</title>
+</head>
+<body>
+
+<input type="text" id="numero1"  name="num">
+<input type="text" id="numero2"  name="num">
+<p id="sumando">
+
+	<script type="text/javascript">
+	/* variables
+	 	contenedores de valores 
+		let / const / var no recomendada*/
+
+		// let
+		let nombre ="ale";
+		let ale 
+		let edad ="32";
+		console.log(nombre); 
+		// console.log() para imprimir
+		// en consola 
+		console.log(ale);
+		ale = "pame";
+		console.log(ale);
+
+		//const
+		const PI = 3.14;
+		console.log(PI);
+		// PI = 2;
+		// no lo cambia xq es constante 
+
+		// TIPOS DE DATOS primitivos / objeto
+		let user = "ale"; //string
+		let age = 35; // number
+		let isMain = true; // boolean
+		let account = null; // null / objeto
+		let married; // underfiend -> valor q no existe q no se asigna
+		let sym = Symbol("123456"); // symbol -> valor univo
+		let alumno = { // objeto
+			sexo: 'f',
+			edad : 35,
+		};
+
+		console.log(user , typeof user);
+		console.log(typeof user);// te da el tipo
+        
+        // CAMBIAR DATOS
+
+        let age2 = 30;
+        console.log(age2 , typeof age2);
+        let Sage2 = String(age2);
+        console.log(Sage2, typeof Sage2);
+        console.log(age2, String(age2));
+        console.log(age2, Boolean(age2));
+        console.log(age2, String(age2).replace('30',200));
+
+        // funcion para ese contexto 
+        function sayHelloNameAge(){
+        	let nameFn = 'Ale';
+        	let ageFn = 30;
+        }
+        sayHelloNameAge(); // imprime
+
+
+        //funciones 
+    
+       /* function restar(a,b){
+        	return a - b;
+        };
+          function sumar(a,b){
+        	return a + b;
+        };
+        console.log(sumar(3,2));
+
+        function Calculadora(){
+        	let a = prompt("Ingrese el primer numero");
+        	let b = prompt("Ingrese el segundo  numero");
+
+        	console.log('restar a - b', restar(a,b));
+        	console.log('sumar a + b', sumar(a,b));
+        }
+        Calculadora();
+
+        (function(){ // no sobres escribir seq en bloq ahi mismo
+	        function Calculadora(){
+	        	let a = prompt("Ingrese el primer numero");
+	        	let b = prompt("Ingrese el segundo  numero");
+
+	        	console.log('restar a - b', restar(a,b));
+	        	console.log('sumar a + b', sumar(a,b));
+	        }
+	        Calculadora();
+        })();*/
+
+        // ejercicios 
+
+        function rest(a,b){
+        	return a - b;
+        };
+          function sum(a,b){
+        	return a + b;
+        };
+        function mul(a,b){
+        	return a * b;
+        };
+          function div(a,b){
+        	return a / b;
+        };
+        function pot(a,b){
+        	return a^b;
+        };
+        console.log(rest(5,2));
+        console.log(sum(5,2));
+        console.log(mul(5,2));
+        console.log(div(5,2));
+        console.log(pot(5,2));
+
+
+       /* function suma(){
+        	let nun1 = prompt("Numero 1");
+			let nun2 = prompt("Numero 2");
+			return nun1 + nun2;
+        }
+        console.log(suma());*/
+
+    function suma(){
+        var numero1 = prompt("num ");
+        var numero2 = prompt("num ");
+        return numero1 - numero2;
+    }
+    
+
+
+	</script>
+
+</body>
+</html>

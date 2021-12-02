@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>DOM</title>
+</head>
+<body>
+<h1>HOLA MUNDO</h1>
+<h1>HOLA MUNDO 2</h1>
+<h2 id="h2" > hola h2</h2>
+<button> boton </button>
+
+<form>
+	<input class="js_name" type="text" placeholder="nombre" required>
+	<input class="js_lastname" type="text" placeholder="apellido" required>
+	<input class="js_password" type="password" placeholder="contraseña" required>
+	<button>ENVIAR</button>
+</form>
+<ul>
+	<li><a href=""> 1</a></li>
+	<li><a href=""> 2</a></li>
+	<li><a href=""> 3</a></li>
+	<li><a href=""> 4</a></li>
+	<li><a href=""> 5</a></li>
+</ul>
+
+</body>
+
+
+<script type="text/javascript">
+// DOM 
+/*
+	document object model
+	permite un acceso a la estructura de una pagina HTML 
+
+*/
+
+const h1 = document.querySelector('h1');
+
+h1.textContent = 'Texto modificado js';
+h1.style.color ='red';
+h1.style.fontSize = '50px';  // font-size
+h1.style.background ='orange';
+
+h1.onclick = function () {
+	this.style.fontSize = `${Number(this.fontSize.replace('px','')) + 10}px`;
+};
+
+h1.onmouseenter = function(){
+	console.log('entra');
+	this.style.background = 'pink';
+};
+
+h1.onmouseout = function(){
+	console.log('sale');
+	this.style.background = 'orange';
+};
+
+//from 
+
+function SubmitForm(){
+
+// querySelector  el primer selector 
+	let form = document.querySelector('form');
+	const inputName = document.querySelector('.js_name');
+	const inputLastname = document.querySelector('.js_lastname');
+	const inputPassword = document.querySelector(".js_password");
+
+	form.onSubmit = function (event) {
+		event.preventDefault();
+		console.log('nombre', inputName.value);
+		console.log('apellido', inputLastname.value);
+		console.log('password', inputPassword);
+	};
+}
+
+SubmitForm();
+
+//getElementById caprtuta por ID
+const h2 = document.getElementById('h2');
+console.log('h2',h2);
+
+//getElementsByTagName Captura por tag
+const links = document.getElementsByTagName('a');
+console.log('links',links);
+for (let i = 0 ; i < links.length; i++) {
+	links[i].style.color ='orange';
+}
+
+// querySelectorAll captura todos 
+
+const li = document.querySelectorAll('li');
+console.log('li',li);
+for (let i = 0 ; i < li.length; i++) {
+	li[i].style.color ='red';
+}
+
+// childnodes
+
+const ul = document.querySelector('ul');
+console.log ('childnodes', ul.childNodes);
+console.log ('children', ul.children);
+console.log ('firstChild', ul.firstChild);
+console.log ('firstElementChild', ul.firstElementChild);
+console.log ('lastChild', ul.lastChild);
+console.log ('lastElementChild', ul.lastElementChild);
+console.log ('nextElementSibling....', ul.firstChild.nextElementSibling);
+console.log ('previousElementSibling....', ul.lastChild.previousElementSibling);
+
+// parent el padre / anterior
+console.log('parent ul ', ul.parentElement);
+console.log('parent ul ', ul.firstElementChild.parentElement);
+
+//closest
+console.log('closest a ', document.querySelector('a').parentElement.parentElement); // <- padre ul -> padre body
+console.log('closest a ', document.querySelector('a').closest('body'));
+console.log('closest a ', document.querySelector('a').closest('body').querySelector('form'));
+
+
+
+
+//
+console.log('ul %0',ul);
+//
+h1.innerHTML = "<a href='www.google.com> agregar html</a>";
+// agregar artibujjo
+h1.setAttribute('class','hola hola2');
+</script>
+</html>

@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv=""X-UA-Compatible content="IE=edge">
+	<script src =./scope.js type="text/javascript"></script>
+	<title>javascript</title>
+</head>
+<body>
+
+	<script type="text/javascript">
+	
+	function fn(){
+		if (arguments.length > 2){
+			console.log('no se puede agregar mas de 2 argumentos en la función')
+		}
+	}
+
+   function fn2(a,...b){
+   	console.log('a',a)
+   	console.log('b',b)
+   } 
+    fn2(1,2,3,5,6)
+
+    //console.log
+
+    console.log("suma",2)
+    console.log('%c oh my jeavens', 'background: #222; color: #bada55')
+    console.error("esto es un error")
+    console.warn("esto es un warnig")
+    console.info("hola mundo")
+
+
+    // operadores matematicos
+    let a = 2;
+    let b = 3;
+
+    a + b //5
+    a - b //-1
+    a * b //6
+    a / b //0.6666666
+    a % b //2
+    a ** b //8
+
+    // operadores de asignacion
+
+    x = 2
+    x++
+    x--
+    x** //...b
+
+    // operadores de compararacion
+
+    a > b
+    a >= b 
+    a <= b
+    a == a 
+    2 == "2" // true valor
+    2 === "2" // falso el valor como tipo
+    2 != "2" //  valor x eso falso no son diferentes
+    2 !== "2" // true xq compara valor como tipo
+
+    // comparadores logicos
+
+	    //a > b &&  nombre =="ale" // true AND
+	    //a > b || mobre == "123" // true  OR
+
+    !(a>b && edad > 30) // si es falso te da true NOT 
+
+    //
+
+    const AGE_MAX = 18;
+    const SEX = 'm';
+    	// toLocaleLowerCase cambia a minuscula
+
+    function Welcome(name){
+    	return `Bienvenido al bar ${name}`; 
+    }
+    function notWelcome(name){
+    	return `No eres Bienvenido al bar ${name}`; 
+    }
+    function notSupporAge(name){
+    	return `Eres menor para entrar al bar ${name}`; 
+    }
+
+    function ElBar(){
+    	let name = prompt('Ingresa tu nombre');
+    	let age = Number(prompt('Ingresa tu edad'));
+    	let sex = prompt('Ingresa tu sexo');
+
+    	if (age > AGE_MAX && sex.toLocaleLowerCase() == SEX ){
+    		alert(Welcome(name));
+    	}
+    	else if (age < AGE_MAX){
+    		alert(notSupporAge(name));
+    	}
+    	else {
+    		alert(notWelcome(name));
+    	}
+    }
+
+    //ElBar();
+
+    function flavorChose(flavor){
+    	return `El sabor que elegiste fue ${flavor}`
+    }
+
+    function flavorNotFound(flavor){
+    	return `El sabor ${flavor} no lo tenemos`;
+    }
+
+    //switch
+    function LaHeladeria(){
+    	let flavor = prompt(
+    		'Ingrese el sabor que quiere (fresa , melon , sandia , naranja, kiwi)').toLocaleLowerCase();
+
+    	switch(flavor){
+    		case 'fresa':{
+    			alert(flavorChose(flavor));
+    			break;
+    		}
+    		case 'melon':{
+    			alert(flavorChose(flavor));
+    			break;
+    		}
+    		case 'sandia':{
+    			alert(flavorChose(flavor));
+    			break;
+    		}
+    		case 'naranja':{
+    			alert(flavorChose(flavor));
+    			break;
+    		}
+    		case 'kiwi':{
+    			alert(flavorChose(flavor));
+    			break;
+    		}
+    		default:{
+    			alert(flavorNotFound(flavor));
+    			break;
+    		}
+    	}
+    	alert('vuelva pronto');
+    }
+   //LaHeladeria();
+    
+    // try cath 
+
+    function suma(a,b){
+    	if(arguments.length > 2) throw console.error('no mas d 2 valores');
+    	return a +b;
+    }
+    // controlar errores catch
+    function saName(){
+    	try{
+    		if(name.length < 6) throw 'short';
+    		if(name.length > 10) throw 'long';
+
+    		message = `El nombre ${name} es correcto`;
+    	}
+    	cath (err){
+    		if (err === 'short') message = `El nombre ${name} es es muy corto`;
+    		if (err === 'long') message = `El nombre ${name} es es muy largo`;
+    	}
+    	finally{
+    		console.log('Nombre evaluado', message)
+    	}
+
+    }
+
+    // lista 
+
+    let numbers =[ 1, 2 ,3 ,4 ,5 ,6];
+    let nombres = ['ale','pame','karo'];
+    let prueba = [['zero',[1,2,3]],0, [0,1,2,3]]
+
+    console.log('numeros',numbers);
+    console.log('numero', numbers[0]);
+    console.log('prueba', prueba[0][0])
+    console.log('prueba', prueba[0][1][1]) //1
+
+    numbers.length;  // longitud
+    numbers.push(12); // agrega un numero al final
+    numbers.pop(); // elimina el ultimo elemento de un array
+    numbers.unshift(5); // agrega un numero al principio
+    numbers.splice(0,1); // desde 0 solo 1 elemento
+    numbers.shift(); // elimina el primero 
+
+
+    // estructuras de datos 
+
+    let alumno ={
+    	nombre :'ale',
+    	lastname: 'cornejo',
+    	age: 35,
+    	sex: 'f',
+
+    	getName: function(){
+    		return this.nombre;
+    	}
+
+    	getName: function(a){
+    		return this.nombre + a;
+    	}
+
+    	getFullName: function(){
+    		return ${this.nombre} ${this.lastname}
+    	}
+    };
+
+
+    let alumno =[
+     {
+    	nombre :'ale',
+    	lastname: 'cornejo',
+    	age: 35,
+    	sex: 'f',
+
+    	getName: function(){
+    		return this.nombre;
+    	}
+
+    	getName: function(a){
+    		return this.nombre + a;
+    	}
+
+    	getFullName: function(){
+    		return ${this.nombre} ${this.lastname}
+    	}
+    }
+
+     {
+    	nombre :'pame',
+    	lastname: 'cornejo',
+    	age: 26,
+    	sex: 'f',
+
+    	getName: function(){
+    		return this.nombre;
+    	}
+
+    	getName: function(a){
+    		return this.nombre + a;
+    	}
+
+    	getFullName: function(){
+    		return ${this.nombre} ${this.lastname}
+    	}
+    }
+
+    ];
+
+    console.log('objeto_propiedad', alumno.nombre);
+    console.log('funcion_get', alumno.getName());
+    console.log('funcion_get', alumno.getName(a));
+
+    let profesor = {
+    	nombre :'ale',
+    	lastname: 'cornejo',
+    	age: 35,
+    	grade: 5,
+    	sex: 'f',
+    	experience: [
+    		{
+    			college: 'arequia',
+    			age: 2020,
+    		}
+    		{
+    			college: 'san arequia',
+    			age: 2020,
+    		} 
+    	]
+    }
+
+for (let i = 0; i < alumnos.length; i++) {
+		console.log(alumnos[i]);
+}
+	</script>
+	
+</body>
+</html>
