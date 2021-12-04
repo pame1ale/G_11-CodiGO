@@ -1,0 +1,54 @@
+.h1 {
+  font-family: "Quicksand", serif;
+  font-size: 48px;
+  font-weight: bold;
+}
+.h2 {
+  font-family: "Quicksand", sans-serif;
+  font-size: 24px;
+  font-weight: medium;
+  color: #23233b;
+}
+.h3 {
+  font-family: "Quicksand", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+}
+.p {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 16px;
+}
+
+.titulo {
+  margin: 16px;
+  padding-right: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.titulo_a {
+  font-size: 24px;
+  color: #96c7c1;
+  text-decoration: none;
+}
+.boxes {
+  display: flex;
+  justify-content: center;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 4;
+}
+.box {
+  background-image: url("../img/quiz.png");
+  width: 45%;
+  margin: 8px;
+  height: 238px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  border-radius: 16px;
+  box-shadow: 2px 5px #aaa;
+}
+.box .box-content {
+  margin: 16px;
+  line-height: 1.5;
+}
